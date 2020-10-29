@@ -1,0 +1,97 @@
+.about {
+  width: 80%;
+  margin: 0 auto;
+
+  //   background-color: rgba($color-primary, 0.6);
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 249, 223, 0.9),
+    rgba(191, 95, 255, 0.8),
+    rgba(255, 249, 223, 0)
+  );
+  border-radius: 3px;
+  padding: 1rem 9rem;
+  padding-left: 9rem;
+  transform: skewX(-12deg);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+
+  @include respond(tab-port) {
+    padding: 0.4rem 1rem 0.4rem 5rem;
+    transform: skewX(0);
+    width: 100%;
+  }
+
+  &__text {
+    padding: 1rem 1rem;
+    font-size: 2.5rem;
+
+    transform: skewX(12deg);
+    @include respond(tab-port) {
+      transform: skewX(0);
+    }
+  }
+
+  &__shape {
+    width: 20rem;
+    height: 20rem;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transform: translateX(-3rem) skewX(12deg);
+    margin-top: 3rem;
+
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+
+    @include respond(tab-port) {
+      transform: translateX(-3rem) skewX(0);
+    }
+  }
+
+  &__image {
+    height: 100%;
+  }
+}
+
+.education {
+  width: 80%;
+  text-align: center;
+  margin: 5rem auto;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  &__header {
+    font-size: 5rem;
+    font-weight: 300;
+  }
+
+  &__box {
+    position: relative;
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 65%;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 249, 223, 0.9),
+      rgba(191, 95, 255, 0.8),
+      rgba(255, 249, 223, 0)
+    );
+  
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  &__degree {
+    font-size: 2rem;
+  }
+}

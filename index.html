@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/css/icon-font.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="src/images/logo.png" />
+
+    <title>Brian's Portfolio ★</title>
+  </head>
+  <body>
+    <input type="checkbox" class="nav__checkbox" id="nav-toggle" />
+    <label for="nav-toggle" class="nav__button">
+      <span class="nav__icon">&nbsp;</span>
+    </label>
+
+    <div class="nav-mobile">
+      <ul class="nav-mobile__links">
+        <a href="#top" class="nav-mobile__link btn-link nav-target">
+          <span class="nav-target">Top</span>
+        </a>
+        <a href="#projects" class="nav-mobile__link btn-link nav-target">
+          <span class="nav-target">Projects</span></a
+        >
+        <a href="#skills" class="nav-mobile__link btn-link nav-target">
+          <span class="nav-target">Skills</span></a
+        >
+        <a href="#about" class="nav-mobile__link btn-link nav-target">
+          <span class="nav-target">About</span></a
+        >
+        <a href="#contact" class="nav-mobile__link btn-link nav-target">
+          <span class="nav-target">Contact</span></a
+        >
+      </ul>
+    </div>
+
+    <div class="nav">
+      <div class="nav__left">
+        <a href="">
+          <img src="src/images/logo.png" alt="Logo" class="nav__logo" />
+        </a>
+      </div>
+
+      <div class="nav__right">
+        <ul class="nav__links">
+          <a href="#top" class="nav__link btn-link nav-target">
+            <span class="nav-target">Top</span>
+          </a>
+          <a href="#projects" class="nav__link btn-link nav-target">
+            <span class="nav-target">Projects</span></a
+          >
+          <a href="#skills" class="nav__link btn-link nav-target">
+            <span class="nav-target">Skills</span></a
+          >
+          <a href="#about" class="nav__link btn-link nav-target">
+            <span class="nav-target">About</span></a
+          >
+          <a href="#contact" class="nav__link btn-link nav-target">
+            <span class="nav-target">Contact</span></a
+          >
+        </ul>
+      </div>
+    </div>
+    <header class="header">
+      <div id="top"></div>
+      <div class="header__box-main">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Brian Lockerbie</span>
+          <span class="heading-primary--sub u-margin-top-medium">
+            Junior Full Stack JavaScript Developer
+          </span>
+        </h1>
+        <p class="heading-secondary u-margin-top-small">
+          <i class="header__loc-icon icon-basic-geolocalize-01"></i>
+          <span>Toronto, ON</span>
+        </p>
+      </div>
+      <div class="header__box-sub">
+        <p class="heading-tertiary">Welcome to my Portfolio</p>
+
+        <img
+          src="src/images/scroll-down-icon.png"
+          alt="icon"
+          class="header__scroll-icon u-margin-top-medium"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="section-projects">
+        <div id="projects" class="u-anchor"></div>
+        <h2 class="heading-section heading-section--dark">Projects</h2>
+
+        <!--Row 1-->
+        <div class="row">
+          <!--1st col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/shopping-cart.jpg"
+                    loading="lazy"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span> Shopping Cart App</span>
+                </h4>
+              </div>
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  A basic shopping cart application built with React & Redux.
+                  Add and remove items. Edit the quantity of the items and
+                  automatically calculate the final total.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://react-shopping-cart-app.netlify.app"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/brianlockerbie/shopping-cart"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <div class="card__made-with">
+                    <div class="card__made-with-line">&nbsp;</div>
+                    <p class="card__made-with-text">Made with</p>
+                    <div class="card__made-with-line">&nbsp;</div>
+                  </div>
+                  <ul class="card__techs">
+                    <li>Node</li>
+                    <li>React</li>
+                    <li>NPM</li>
+                    <li>Redux</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--2nd col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/recipes-app.jpg"
+                    loading="lazy"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span> Recipes App</span>
+                </h4>
+              </div>
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  Search any recipe or ingredient into the search bar.
+                  Displays 9 recipes per page including each recipes photo,
+                  title and calorie amount.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://reacts-recipes-app.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/brianlockerbie/recipes-app"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <div class="card__made-with">
+                    <div class="card__made-with-line">&nbsp;</div>
+                    <p class="card__made-with-text">Made with</p>
+                    <div class="card__made-with-line">&nbsp;</div>
+                  </div>
+                  <ul class="card__techs">
+                    <li>Node</li>
+                    <li>React</li>
+                    <li>NPM</li>
+                    <li>API</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--3rd col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/courses-manager.jpg"
+                    loading="lazy"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span> React/REST API Full-Stack APP</span>
+                </h4>
+              </div>
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  Courses manager that allows schools to create, update,
+                  and delete courses in a relational database.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://coursefinder111.herokuapp.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/brianlockerbie/full-stack-app"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <div class="card__made-with">
+                    <div class="card__made-with-line">&nbsp;</div>
+                    <p class="card__made-with-text">Made with</p>
+                    <div class="card__made-with-line">&nbsp;</div>
+                  </div>
+                  <ul class="card__techs">
+                    <li>Node</li>
+                    <li>React</li>
+                    <li>Rest API</li>
+                    <li>Express</li>
+                    <li>Sequelize ORM</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Row 2-->
+        <div class="row">
+          <!--1st col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="/src/images/dynamic-gallery.jpg"
+                    loading="lazy"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span> Dynamic Gallery</span>
+                </h4>
+              </div>
+
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  A Dynamic Gallery application with a Masonry layout.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://dynamic-gallery.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/brianlockerbie/dynamic-gallery"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <div class="card__made-with">
+                    <div class="card__made-with-line">&nbsp;</div>
+                    <p class="card__made-with-text">Made with</p>
+                    <div class="card__made-with-line">&nbsp;</div>
+                  </div>
+                  <ul class="card__techs">
+                    <li>React</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--2nd col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/sql-manager.jpg"
+                    loading="lazy"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span> SQL Library Manager</span>
+                </h4>
+              </div>
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  A library database management app. This CRUD app will allow you
+                   to view, create, edit and delete data on the sqlite database.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://sql-library-manager-1.herokuapp.com/books/page/1"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/brianlockerbie/sql-library-manager"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <div class="card__made-with">
+                    <div class="card__made-with-line">&nbsp;</div>
+                    <p class="card__made-with-text">Made with</p>
+                    <div class="card__made-with-line">&nbsp;</div>
+                  </div>
+                  <ul class="card__techs">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>SQLite Database</li>
+                    <li>Sequelize</li>
+                    <li>Pug Template Engine</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--3rd col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/oop-game.jpg"
+                    loading="lazy"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span> OOP Game</span>
+                </h4>
+              </div>
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  Guess what letters are within the phrase by clicking on that
+                  key. If the letter is in the phrase it’ll show on the template. 
+                  If you guess incorrectly, you lose a life.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://brianlockerbie.com/oop-game/"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/brianlockerbie/oop-game"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <div class="card__made-with">
+                    <div class="card__made-with-line">&nbsp;</div>
+                    <p class="card__made-with-text">Made with</p>
+                    <div class="card__made-with-line">&nbsp;</div>
+                  </div>
+                  <ul class="card__techs">
+                    <li>OOP</li>
+                    <li>DOM Manipulation</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Row 3-->
+        <div class="row">
+          <!--1st col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/typing-game.jpg"
+                    loading="lazy"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span>Typing Game</span>
+                </h4>
+              </div>
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  You have 30 seconds to type the displayed word. For each
+                  word your spell correctley you gain +1 point.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://react-typing-game.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/brianlockerbie/typing-game"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <div class="card__made-with">
+                    <div class="card__made-with-line">&nbsp;</div>
+                    <p class="card__made-with-text">Made with</p>
+                    <div class="card__made-with-line">&nbsp;</div>
+                  </div>
+                  <ul class="card__techs">
+                    <li>React</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--2nd col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/react-gallery.jpg"
+                    loading="lazy"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span>React Gallery App</span>
+                </h4>
+              </div>
+
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  A React app that creates an image gallery.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://image-react-gallery.netlify.app"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/brianlockerbie/react-gallery-app"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <div class="card__made-with">
+                    <div class="card__made-with-line">&nbsp;</div>
+                    <p class="card__made-with-text">Made with</p>
+                    <div class="card__made-with-line">&nbsp;</div>
+                  </div>
+                  <ul class="card__techs">
+                    <li>React</li>
+                    <li>React Router</li>
+                    <li>JSX</li>
+                    <li>Fetch API</li>
+                    <li>Flicker API</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--3rd col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/random-quote.jpg"
+                    loading="lazy"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span>Random Quote Generator</span>
+                </h4>
+              </div>
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  A single-paged app that displays a quote at random each 
+                  time the button is clicked. When the quote changes, the 
+                  background colour randomly changes.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://brianlockerbie.com/random-quote-generator/"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/brianlockerbie/random-quote-generator"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <div class="card__made-with">
+                    <div class="card__made-with-line">&nbsp;</div>
+                    <p class="card__made-with-text">Made with</p>
+                    <div class="card__made-with-line">&nbsp;</div>
+                  </div>
+                  <ul class="card__techs">
+                    <li>JS Syntax</li>
+                    <li>Variables</li>
+                    <li>Loops</li>
+                  </ul>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-skills">
+        <div id="skills" class="u-anchor"></div>
+        <h2 class="heading-section heading-section--light">Skills</h2>
+
+        <div class="skills__box">
+          <h4 class="skills__heading">Back End</h4>
+
+          <ul class="list--white-icons">
+            <li>Express</li>
+            <li>Rest API</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <h4 class="skills__heading">Front End</h4>
+
+          <ul class="list--white-icons">
+            <li>React</li>
+            <li>Redux</li>
+            <li>Gatsby</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <h4 class="skills__heading">Development</h4>
+
+          <ul class="list--white-icons">
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Node.js</li>
+            <li>Git</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <h4 class="skills__heading">Database</h4>
+
+          <ul class="list--white-icons">
+            <li>SQL</li>
+            <li>Sequelize ORM</li>
+            <li>Sqlite</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-about">
+        <div id="about" class="u-anchor"></div>
+        <h2 class="heading-section heading-section--dark">
+          About me
+        </h2>
+        <div class="about">
+          <figure class="about__shape">
+            <img
+              src="src/images/IMG_0577 (3).JPG"
+              loading="lazy"
+              alt="Bio pic"
+              class="about__image"
+            />
+          </figure>
+          <div class="about__text">
+            <p>
+              I'm Brian from Canada, and I am a Junior Full Stack Developer with 
+              experience in JavaScript (Express, React, Node.js). I do content on 
+              Front-end & Back-end Development. 
+            </p>
+            <br />
+            <p>
+              I really enjoy learning new languages and frameworks like React 
+              and React Native. I am passionate about Mobile/Web Development and Design. I am now
+              actively seeking an opportunity to work as a Junior Full Stack JavaScript Developer.
+              Thank you for visiting my site!
+            </p>
+          </div>
+        </div>
+
+        <div class="education">
+          <h3 class="education__header">
+            Education
+          </h3>
+          <div class="education__box">
+            <h4 class="education__title">
+              Treehouse
+            </h4>
+            <p class="education__degree">
+              Full Stack JavaScript Techdegree, June 2019 - May 2020
+            </p>
+          </div>
+
+          <div class="education__box">
+            <h4 class="education__title">
+              George Brown College, Toronto, ON
+            </h4>
+            <p class="education__degree">
+              Business - Accounting - Completed 1st Year 2014/2015
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div id="contact" class="u-anchor"></div>
+        <h2 class="heading-section heading-section--light">
+          Contact Information
+        </h2>
+        <div class="contact">
+          <div class="contact__email-box">
+            <p class="contact__email-text">brian.lockerbie@gmail.com</p>
+          </div>
+          
+          <div class="contact__links">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/brian-lockerbie"
+              class="contact__link"
+            >
+              <img
+                src="src/images/icon-linkedin.png"
+                alt="Logo"
+                class="contact__link-logo"
+              />
+              <p class="contact__link-text">Connect on LinkedIn</p>
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/brianlockerbie"
+              class="contact__link"
+            >
+              <img
+                src="src/images/icon-github.png"
+                alt="Logo"
+                class="contact__link-logo"
+              />
+              <p class="contact__link-text">GitHub</p>
+            </a>
+          </div>
+
+          <div class="contact__image-box">
+            <img
+              src="src/images/brianlockerbie111(1).png"
+              loading="lazy"
+              alt="Bio pic"
+              class="contact__image"
+            />
+          </div>
+
+          <p class="contact__message">Thank you for visiting!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/brianlockerbie"
+        class="footer__link"
+      >
+        <div class="footer__text">GitHub</div>
+        <img src="src/images/icon-github.png" alt="Logo" class="footer__logo" />
+      </a>
+    </footer>
+  </body>
+  <script type="module" src="src/js/polyfill.js"></script>
+  <script type="module" src="src/js/index.js"></script>
+</html>
